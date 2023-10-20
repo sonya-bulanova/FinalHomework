@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StartWindow</class>
+ <widget class="QDialog" name="StartWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>759</width>
+    <height>607</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0.238636, x2:1, y2:1, stop:0 rgba(49, 116, 96, 255), stop:1 rgba(255, 255, 255, 255));</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="font">
+      <font>
+       <stylestrategy>PreferAntialias</stylestrategy>
+      </font>
+     </property>
+     <property name="toolTipDuration">
+      <number>0</number>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0.238636, x2:1, y2:1, stop:0 rgba(49, 116, 96, 255), stop:1 rgba(255, 255, 255, 255));</string>
+     </property>
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="LoginWidget" name="PageLogin"/>
+     <widget class="RegisterForm" name="PageRegister"/>
+     <widget class="StartWindowForm" name="StartPage">
+      <property name="minimumSize">
+       <size>
+        <width>5</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>LoginWidget</class>
+   <extends>QWidget</extends>
+   <header>source/loginwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>RegisterForm</class>
+   <extends>QWidget</extends>
+   <header>source/registerform.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>StartWindowForm</class>
+   <extends>QWidget</extends>
+   <header>source/startwindowform.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
